@@ -1,0 +1,21 @@
+[package]
+name = "pl-simd"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.78.0"
+
+[lib]
+name = "pl_simd"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.21.1"
+polars = { version = "0.40.0", features = [
+    "dtype-full",
+    "dtype-array",
+    "list_eval",
+] }
+pyo3-polars = { version = "*", features = ["derive"] }
+serde = { version = "*", features = ["derive"] }
+simsimd = "*"
+paste = "*"
