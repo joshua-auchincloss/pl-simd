@@ -11,7 +11,7 @@ __pycache__/
 *.so
 
 *.csv
-
+*.ipynb
 _lib.rs
 # Distribution / packaging
 .Python
